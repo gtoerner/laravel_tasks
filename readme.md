@@ -1,5 +1,13 @@
 # Laravel PHP Framework
 
+ 2105  php artisan make:migration create_tasks_table --create=tasks
+ 2106  vi database/migrations/2016_07_12_032643_create_tasks_table.php 
+ 2107  php artisan migrate
+ 2108  php artisan make:model Task
+ 2109  vi app/Task.php 
+ 2110  vi app/Http/routes.php 
+
+
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)

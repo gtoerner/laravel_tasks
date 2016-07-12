@@ -12,7 +12,14 @@
 */
 
 use App\Task;
+use App\User;
 Use Illuminate\Http\Request;
+
+Route::get('users', function () {
+    $users = User::orderBy('created_at', 'asc')->get();
+
+    return view('users', ['users' => $users]);
+});
 
 Route::get('tasks', function () {
     $tasks = Task::orderBy('created_at', 'asc')->get();
